@@ -1,0 +1,28 @@
+{
+  "name": "jm-sso",
+  "version": "0.0.0",
+  "description": "single sign on",
+  "main": "./lib/index",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jm-root/jm-sso.git"
+  },
+  "keywords": [
+    "javascript",
+    "jm-sso",
+    "sso"
+  ],
+  "author": "Jeff YU",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jm-root/jm-sso/issues"
+  },
+  "homepage": "https://github.com/jm-root/jm-sso",
+  "dependencies": {
+    "jm-common": "*"
+    ,"mongoose" : "*"
+  }
+}
