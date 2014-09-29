@@ -6,7 +6,7 @@ var MQ = jmcommon.MQ;
 var SSO = require('./lib');
 
 var mq = new MQ();
-var sso;
+var sso = new SSO();
 var uid, token;
 var passwd = '123';
 var newPasswd = '1234';
@@ -92,7 +92,7 @@ DB.connect(null, false, function(err, db){
         db: db,
         mq: mq
     };
-    sso = new SSO(opts);
+    sso.init(opts);
 
     signup();
 
