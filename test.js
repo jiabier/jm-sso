@@ -96,4 +96,16 @@ DB.connect(null, false, function(err, db){
 
     signup();
 
+    sso.findUsers({id:[1]}, function(err, doc){
+        console.info('find success: ' + doc)
+    });
+
+    sso.findUsersByIds([1, 2], function(err, doc){
+        console.info('find success: ' + doc)
+    });
+
+    sso.updateUser(1, {passwd:'123'}, function(err, doc){
+        console.info('update success: ' + doc)
+    });
+
 });
